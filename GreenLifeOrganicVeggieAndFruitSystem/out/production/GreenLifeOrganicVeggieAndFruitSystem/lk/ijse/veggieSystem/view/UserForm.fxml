@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userFormContext" prefHeight="900.0" prefWidth="1022.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.veggieSystem.controller.UserFormController">
+   <children>
+      <Label layoutX="430.0" layoutY="49.0" text="Add New User" textFill="#bf2f19">
+         <font>
+            <Font name="MS Outlook" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="159.0" text="User Id:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserId" layoutX="91.0" layoutY="201.0" onAction="#txtUserIdOnAction" onKeyReleased="#txtUserIdKeyReleased" prefHeight="31.0" prefWidth="248.0" promptText="Enter User Id" />
+      <Label layoutX="89.0" layoutY="279.0" text="Name:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="741.0" layoutY="159.0" text="Password:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="159.0" text="User Name:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="741.0" layoutY="279.0" text="User Mobile:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="279.0" text="User Address:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="374.0" text="Email:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName" layoutX="412.0" layoutY="201.0" onKeyReleased="#txtUserNameKeyReleased" prefHeight="31.0" prefWidth="235.0" promptText="Enter User Name" />
+      <JFXTextField fx:id="txtName" layoutX="89.0" layoutY="314.0" onKeyReleased="#txtNameKeyReleased" prefHeight="31.0" prefWidth="272.0" promptText="Enter Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="412.0" layoutY="314.0" prefHeight="31.0" prefWidth="255.0" promptText="Enter User Address" />
+      <JFXTextField fx:id="txtPassword" layoutX="741.0" layoutY="201.0" onKeyReleased="#txtPasswordKeyReleased" prefHeight="31.0" prefWidth="222.0" promptText="Enter Password" />
+      <JFXTextField fx:id="txtMobile" layoutX="741.0" layoutY="314.0" onKeyReleased="#txtMobileKeyReleased" prefHeight="31.0" prefWidth="235.0" promptText="Enter User Mobile" />
+      <JFXTextField fx:id="txtEmail" layoutX="89.0" layoutY="406.0" onKeyReleased="#txtEmailKeyReleased" prefHeight="31.0" prefWidth="272.0" promptText="Enter Email" />
+      <JFXButton layoutX="384.0" layoutY="400.0" onAction="#btnAddOnAction" prefHeight="44.0" prefWidth="92.0" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Add" textFill="#fafcfb">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="484.0" layoutY="400.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="92.0" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Delete" textFill="#fafcfb">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="587.0" layoutY="400.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="104.0" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Update" textFill="#fafcfb">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tableView" layoutX="20.0" layoutY="484.0" prefHeight="367.0" prefWidth="992.0">
+        <columns>
+          <TableColumn fx:id="tblUserId" prefWidth="75.0" text="User Id" />
+          <TableColumn fx:id="tblUserName" prefWidth="107.0" text="User Name" />
+            <TableColumn fx:id="tblPassword" prefWidth="116.0" text="Password" />
+            <TableColumn fx:id="tblName" prefWidth="154.0" text="Name" />
+            <TableColumn fx:id="tblAddress" prefWidth="194.0" text="User Address" />
+            <TableColumn fx:id="tblMobile" prefWidth="161.0" text="User Mobile" />
+            <TableColumn fx:id="tblEmail" prefWidth="184.0" text="Email" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="706.0" layoutY="400.0" onAction="#btnSearchOnAction" prefHeight="44.0" prefWidth="92.0" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Search" textFill="#fafcfb">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblUserId" layoutX="91.0" layoutY="232.0" prefHeight="21.0" prefWidth="203.0" textFill="#e80909" />
+      <Label fx:id="lblUserName" layoutX="415.0" layoutY="232.0" prefHeight="21.0" prefWidth="203.0" textFill="#e80909" />
+      <Label fx:id="lblPassword" layoutX="741.0" layoutY="232.0" prefHeight="21.0" prefWidth="203.0" textFill="#e80909" />
+      <Label fx:id="lblName" layoutX="91.0" layoutY="345.0" prefHeight="21.0" prefWidth="203.0" textFill="#e80909" />
+      <Label fx:id="lblMobile" layoutX="741.0" layoutY="345.0" prefHeight="21.0" prefWidth="203.0" textFill="#e80909" />
+      <Label fx:id="lblEmail" layoutX="91.0" layoutY="440.0" prefHeight="21.0" prefWidth="203.0" textFill="#e80909" />
+   </children>
+</AnchorPane>

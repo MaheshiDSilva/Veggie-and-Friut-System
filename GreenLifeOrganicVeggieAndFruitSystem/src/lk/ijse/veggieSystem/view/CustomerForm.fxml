@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1022.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.veggieSystem.controller.CustomerFormController">
+   <children>
+      <AnchorPane fx:id="customerFormContext" prefHeight="900.0" prefWidth="1022.0">
+         <children>
+            <Label layoutX="354.0" layoutY="51.0" text="Manage Customer" textFill="#bf2f19">
+               <font>
+                  <Font name="MS Outlook" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="153.0" text="Customer Id:-">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="661.0" layoutY="153.0" text="Customer Name:-">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="370.0" layoutY="153.0" text="User Id:-">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="661.0" layoutY="243.0" text="Address:-">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="243.0" text="Mobile:-">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCusId" layoutX="88.0" layoutY="192.0" onAction="#txtCusIdOnAction" onKeyReleased="#txtCusIdKeyReleased" prefHeight="31.0" prefWidth="219.0" promptText="Enter Customer Id" />
+            <JFXTextField fx:id="txtAddress" layoutX="661.0" layoutY="284.0" prefHeight="31.0" prefWidth="339.0" promptText="Enter Address" />
+            <JFXButton layoutX="99.0" layoutY="348.0" onAction="#btnAddOnAction" prefHeight="44.0" prefWidth="85.0" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Add" textFill="#fafcfb">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="198.0" layoutY="348.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Delete" textFill="#fafcfb">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="307.0" layoutY="348.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Update" textFill="#fafcfb">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <TableView fx:id="tableView" layoutX="3.0" layoutY="429.0" prefHeight="396.0" prefWidth="1009.0">
+               <columns>
+                  <TableColumn fx:id="tblCusId" prefWidth="112.0" text="Customer Id" />
+                  <TableColumn fx:id="tblUserId" prefWidth="115.0" text="User Id" />
+                  <TableColumn fx:id="tblCusName" prefWidth="249.0" text="Customer Name" />
+                  <TableColumn fx:id="tblMobile" prefWidth="232.0" text="Mobile" />
+                  <TableColumn fx:id="tblAddress" prefWidth="300.0" text="Address" />
+               </columns>
+            </TableView>
+            <JFXTextField fx:id="txtMobile" layoutX="88.0" layoutY="284.0" onKeyReleased="#txtMobileKeyReleased" prefHeight="31.0" prefWidth="237.0" promptText="Enter Customer Mobile" />
+            <JFXTextField fx:id="txtCusName" layoutX="661.0" layoutY="192.0" onKeyReleased="#txtCusNameKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="Enter Customer Name" />
+            <JFXButton layoutX="417.0" layoutY="348.0" onAction="#btnSearchOnAction" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Search" textFill="#fafcfb">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="txtUserId" layoutX="370.0" layoutY="192.0" onKeyReleased="#txtUserIdKeyReleased" prefHeight="31.0" prefWidth="200.0" promptText="Enter UserId" />
+            <Label fx:id="lblCusId" layoutX="88.0" layoutY="223.0" prefHeight="21.0" prefWidth="158.0" textFill="#eb0707" />
+            <Label fx:id="lblUserId" layoutX="369.0" layoutY="223.0" prefHeight="21.0" prefWidth="185.0" textFill="#e80909" />
+            <Label fx:id="lblCusName" layoutX="665.0" layoutY="223.0" prefHeight="21.0" prefWidth="290.0" textFill="#eb0808" />
+            <Label fx:id="lblCusMobile" layoutX="88.0" layoutY="315.0" prefHeight="21.0" prefWidth="146.0" textFill="#e40a0a" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

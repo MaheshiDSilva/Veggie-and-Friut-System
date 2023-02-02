@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="supplierFormContext" prefHeight="900.0" prefWidth="1022.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.veggieSystem.controller.SupplierFormController">
+   <children>
+      <Label layoutX="406.0" layoutY="55.0" text="Manage Supplier" textFill="#bf2f19">
+         <font>
+            <Font name="MS Outlook" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="154.0" text="Supplier Id:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSupId" layoutX="32.0" layoutY="188.0" onAction="#txtSupIdOnAction" onKeyReleased="#txtSupIdKeyReleased" prefHeight="31.0" prefWidth="248.0" promptText="Enter Supplier Id" />
+      <Label layoutX="467.0" layoutY="154.0" text="Name:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" layoutX="467.0" layoutY="188.0" onKeyReleased="#txtNameKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="Enter Name" />
+      <Label layoutX="32.0" layoutY="251.0" text="Address:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAddress" layoutX="32.0" layoutY="288.0" prefHeight="31.0" prefWidth="322.0" promptText="Enter Address" />
+      <JFXTextField fx:id="txtMobile" layoutX="467.0" layoutY="288.0" onKeyReleased="#txtMobileKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="Enter Mobile Number" />
+      <Label layoutX="467.0" layoutY="251.0" text="Mobile:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="352.0" text="Amount:-">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAmount" layoutX="32.0" layoutY="392.0" onKeyReleased="#txtAmountKeyReleased" prefHeight="31.0" prefWidth="322.0" promptText="Enter Amount" />
+      <TableView fx:id="tableView" layoutX="13.0" layoutY="488.0" prefHeight="373.0" prefWidth="996.0">
+        <columns>
+          <TableColumn fx:id="tblSupId" prefWidth="124.0" text="Supplier Id" />
+          <TableColumn fx:id="tblName" prefWidth="206.0" text="Name" />
+            <TableColumn fx:id="tblAddress" prefWidth="245.0" text="Address" />
+            <TableColumn fx:id="tblMobile" prefWidth="199.0" text="Mobile" />
+            <TableColumn fx:id="tblAmount" prefWidth="221.0" text="Amount" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="394.0" layoutY="392.0" onAction="#btnAddOnAction" prefHeight="44.0" prefWidth="89.0" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Add" textFill="#fafcfb">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="494.0" layoutY="392.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Delete" textFill="#fafcfb">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="590.0" layoutY="392.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Update" textFill="#fafcfb">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="697.0" layoutY="392.0" onAction="#btnSearchOnAction" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Search" textFill="#fafcfb">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblSupId" layoutX="32.0" layoutY="219.0" prefHeight="21.0" prefWidth="201.0" textFill="#e80c0c" />
+      <Label fx:id="lblName" layoutX="467.0" layoutY="219.0" prefHeight="21.0" prefWidth="201.0" textFill="#e80c0c" />
+      <Label fx:id="lblMobile" layoutX="467.0" layoutY="319.0" prefHeight="21.0" prefWidth="201.0" textFill="#e80c0c" />
+      <Label fx:id="lblAmount" layoutX="33.0" layoutY="426.0" prefHeight="21.0" prefWidth="201.0" textFill="#e80c0c" />
+   </children>
+</AnchorPane>

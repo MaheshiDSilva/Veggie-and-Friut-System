@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CustomerFormContext" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.veggieSystem.controller.DashBoardFormController">
+   <children>
+      <Pane fx:id="dashBoardContext" prefHeight="900.0" prefWidth="278.0" style="-fx-background-color: #419E8F;">
+         <children>
+            <Label layoutX="70.0" layoutY="54.0" text="DashBoard" textFill="#fcf9f9">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="33.0" layoutX="51.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/img_2-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="22.0" layoutY="99.0" onAction="#btnCus1OnAction" prefHeight="55.0" prefWidth="237.0" text="Customer">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="15.0" layoutY="165.0" onAction="#btnItem1OnAction" prefHeight="55.0" prefWidth="219.0" text="Item">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="22.0" layoutY="290.0" onAction="#btnOrder1OnAction" prefHeight="51.0" prefWidth="210.0" text="Order">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="44.0" fitWidth="51.0" layoutX="48.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/supplier-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="33.0" layoutY="342.0" onAction="#btnSupplier1OnAction" prefHeight="55.0" prefWidth="210.0" text="Supplier">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="39.0" fitWidth="51.0" layoutX="40.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/employee-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="46.0" layoutY="407.0" onAction="#btnEmployee1OnAction" prefHeight="55.0" prefWidth="200.0" text="Employee">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="22.0" layoutY="460.0" onAction="#btnPayment1OnAction" prefHeight="55.0" prefWidth="237.0" text="Payment">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="29.0" layoutY="462.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/img_7-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="43.0" layoutX="14.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/distributing-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="18.0" layoutY="521.0" onAction="#btnDD1OnAction" prefHeight="55.0" prefWidth="256.0" text="Distributing Detail">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="64.0" fitWidth="51.0" layoutX="23.0" layoutY="642.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/report-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="25.0" layoutY="642.0" onAction="#btnReport1OnAction" prefHeight="55.0" prefWidth="184.0" text="Report">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="44.0" layoutX="49.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/order1-removebg-preview%20(1).png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="34.0" layoutY="226.0" onAction="#btnPlaceOrder1OnAction" prefHeight="55.0" prefWidth="237.0" text="Place Order">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="39.0" fitWidth="51.0" layoutX="38.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/place_order-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="30.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/back.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="-2.0" onAction="#btnBackOnAction" prefHeight="55.0" prefWidth="177.0" ripplerFill="#f5f5f5" text="Back" textFill="#b90816">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="5.0" layoutY="577.0" onAction="#btnSupplierItemDetail" prefHeight="55.0" prefWidth="268.0" text="Supplier Item Detail">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="8.0" layoutY="588.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/sup-Item-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="12.0" layoutY="810.0" onAction="#btnNewUserOnAction" prefHeight="55.0" prefWidth="210.0" text="New User">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="33.0" layoutX="34.0" layoutY="822.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/new_user-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="33.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/img_3-removebg-preview%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="customerFormContext" layoutX="278.0" layoutY="3.0" prefHeight="900.0" prefWidth="1022.0" style=" -fx-background-color : #ffffff">
+         <children>
+            <Label layoutX="354.0" layoutY="51.0" text="Manage Customer" textFill="#bf2f19">
+               <font>
+                  <Font name="MS Outlook" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="153.0" text="Customer Id:-">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="661.0" layoutY="153.0" text="Customer Name:-">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="376.0" layoutY="153.0" text="User Id:-">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="661.0" layoutY="243.0" text="Address:-">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="243.0" text="Mobile:-">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCusId" layoutX="88.0" layoutY="192.0" onAction="#txtCusIdOnAction" onKeyReleased="#txtCusIdKeyReleased" prefHeight="31.0" prefWidth="219.0" promptText="Enter Customer Id" />
+            <JFXTextField fx:id="txtAddress" layoutX="661.0" layoutY="284.0" prefHeight="31.0" prefWidth="339.0" promptText="Enter Address" />
+            <JFXButton layoutX="99.0" layoutY="348.0" onAction="#btnAddOnAction" prefHeight="44.0" prefWidth="85.0" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Add" textFill="#fafcfb">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="198.0" layoutY="348.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Delete" textFill="#fafcfb">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="307.0" layoutY="348.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Update" textFill="#fafcfb">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <TableView fx:id="tableView" layoutX="3.0" layoutY="429.0" prefHeight="396.0" prefWidth="1009.0">
+               <columns>
+                  <TableColumn fx:id="tblCusId" prefWidth="112.0" text="Customer Id" />
+                  <TableColumn fx:id="tblUserId" prefWidth="115.0" text="User Id" />
+                  <TableColumn fx:id="tblCusName" prefWidth="219.0" text="Customer Name" />
+                  <TableColumn fx:id="tblMobile" prefWidth="261.0" text="Mobile" />
+                  <TableColumn fx:id="tblAddress" prefWidth="301.0" text="Address" />
+               </columns>
+            </TableView>
+            <JFXTextField fx:id="txtMobile" layoutX="88.0" layoutY="284.0" onKeyReleased="#txtMobileKeyReleased" prefHeight="31.0" prefWidth="237.0" promptText="Enter Customer Mobile" />
+            <JFXTextField fx:id="txtCusName" layoutX="661.0" layoutY="192.0" onKeyReleased="#txtCusNameKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="Enter Customer Name" />
+            <JFXButton layoutX="419.0" layoutY="348.0" onAction="#btnSearchOnAction" style="-fx-background-color: #11b81f; -fx-background-radius: 20;" text="Search" textFill="#fafcfb">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="txtUserId" layoutX="376.0" layoutY="192.0" onKeyReleased="#txtUserIdKeyReleased" prefHeight="31.0" prefWidth="200.0" promptText="Enter UserId" />
+            <Label fx:id="lblUserId" layoutX="380.0" layoutY="223.0" prefHeight="21.0" prefWidth="177.0" textFill="#eb0707" />
+            <Label fx:id="lblCusName" layoutX="661.0" layoutY="223.0" prefHeight="21.0" prefWidth="226.0" textFill="#eb0a0a" />
+            <Label fx:id="lblCusMobile" layoutX="88.0" layoutY="315.0" prefHeight="21.0" prefWidth="210.0" textFill="#eb0909" />
+            <Label fx:id="lblCusId" layoutX="88.0" layoutY="223.0" prefHeight="21.0" prefWidth="200.0" textFill="#eb0707" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
